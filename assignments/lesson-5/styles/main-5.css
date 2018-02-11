@@ -1,0 +1,135 @@
+﻿/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+	float: left;
+}
+header img {
+	float: inherit;
+	top: -50px;
+	left: 0px;
+	width: 200px;
+}
+header h1 {
+	font-size: 2em;
+	margin-left: 200px;
+}
+
+header .subheading {
+    margin-left: 240px;
+}
+
+nav {
+}
+nav button {
+	float: right;
+}
+nav ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #001496;
+    float: right;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 12px;
+	text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #FF5719;
+	color: black;
+}
+nav ul li a:hover {
+    background-color: #4C64FF;
+}
+
+main {
+    float: left;
+}
+main h2, h3 {
+    text-align: center;
+}
+h2 {
+    color: #4C64FF;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; height: 120px;}
+
+section {
+    text-align: center;
+}
+section.forecast {
+    display: none;
+}
+.current {
+}
+.current p {
+    font-size: 1.5em;
+    float: left;
+    width: 45%;
+    text-align: right;
+    padding-top: 10px;
+}
+.current picture {
+    float: left;
+    padding-left: 20px;
+}
+.highlow {
+    clear: both;
+    /*column-count: 2;
+    column-gap: 0;
+    padding-left: 180px;
+    padding-right: 180px;*/
+}
+.highlow p {
+    display: inline-block;
+    margin: 8px;
+}
+article {
+  border: 1px solid black;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+}
+article p.town-article {
+    margin: 8px;
+}
+footer {
+	float: left;
+	bottom: 0;
+	left: 0;
+	background-color: #4C64FF;
+	width: 100%;
+}
+footer aside {
+	margin-top: 5px;
+    margin-bottom: 5px;
+	font-size: .75em;
+	text-align: center;
+}
+footer>p {
+    margin: 0;
+	text-align: center;
+	color: white;
+	background-color: #001496;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+/* Other Class Selectors */
