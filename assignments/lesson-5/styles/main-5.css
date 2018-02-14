@@ -20,14 +20,17 @@ header img {
 	top: -50px;
 	left: 0px;
 	width: 200px;
+    padding: 2%;
 }
 header h1 {
 	font-size: 2em;
 	margin-left: 200px;
+    padding: 0 2%;
 }
 
 header .subheading {
     margin-left: 240px;
+    padding: 2%;
 }
 
 nav {

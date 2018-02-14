@@ -1,6 +1,8 @@
 ﻿@media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    
+    header, body, footer {
+        max-width: 1600px;
+    }
     main figure img {
         float: none;
         width: 100%;
