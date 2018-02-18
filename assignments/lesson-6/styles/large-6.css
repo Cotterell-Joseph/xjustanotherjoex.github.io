@@ -1,0 +1,18 @@
+﻿@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, body, footer {
+        max-width: 1600px;
+        margin: auto;
+    }
+    main figure img {
+        float: none;
+        width: 100%;
+        max-height: 120px;
+        min-height: 0;
+    }
+    #something {
+        float: none
+    }
+  article p.town-article img { width: 50%; }
+  
+}
