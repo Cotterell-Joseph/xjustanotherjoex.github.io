@@ -160,4 +160,7 @@ figcaption {
     grid-gap: 10px;
     padding: 0px 10px;
 }
+.gallery figure img:hover {
+    box-shadow: 5px 5px 5px #4C64FF;
+}
 /* Other Class Selectors */
