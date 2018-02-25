@@ -1,0 +1,29 @@
+﻿@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, body, footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+    main figure img {
+        width: 100%;
+        max-height: 120px;
+        min-height: 0;
+        overflow: hidden;
+    }
+    .current p {
+        width: 48%;
+    }
+    #something {
+    }
+  article p.town-article img { width: 50%; }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        padding: 20px 40px;
+    }
+main {
+
+}
+  
+}
