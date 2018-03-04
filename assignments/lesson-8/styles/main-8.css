@@ -6,6 +6,9 @@ body {
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
 }
+.left {
+    margin-left: 1em;
+}
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   max-width: 100%;
@@ -159,4 +162,61 @@ figcaption {
     grid-gap: 10px;
     padding: 0px 10px;
 }
-/* Other Class Selectors */
+/******* Form Content *******/
+#formhead {margin-left: 2em;}
+form {
+    margin: 1em 3%;
+}
+fieldset {
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    background-color: #4c64ff;
+    margin: 1.5em;
+    border: none;
+}
+legend {
+    color: black;
+    border-left: 6px solid #001496;
+    padding: .5em;
+    background-color: #ff5719;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+label span {
+    display: block;
+    font-size: .8em;
+    color: white;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+input.submitBtn {
+    -webkit-appearance: none;
+    color: black;
+    border: solid 1px #001496;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: #ff5719;
+    box-shadow: 4px 4px 10px #666;
+}
+
+.radio {
+    color: white;
+}
+.radio input {
+    margin-left: 1.5em;
+}
+
+textarea {
+    margin-left: .5em;
+}
+#ratingvalue {
+    color: white;
+    margin-left: 1.5em;
+}
