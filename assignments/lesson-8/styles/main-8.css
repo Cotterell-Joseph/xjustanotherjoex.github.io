@@ -197,9 +197,9 @@ input.submitBtn {
     -webkit-appearance: none;
     color: black;
     border: solid 1px #001496;
-    border-radius: 7px;
     width: 50%;
     margin: .5em 0;
+    margin-left: 1.5em;
     font-size: 1em;
     padding: .6em;
     background: #ff5719;
