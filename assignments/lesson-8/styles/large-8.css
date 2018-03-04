@@ -13,8 +13,6 @@
     .current p {
         width: 48%;
     }
-    #something {
-    }
   article p.town-article img { width: 50%; }
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
@@ -22,3 +20,4 @@
         padding: 20px 40px;
     }
 .gallery figure img:hover {box-shadow: 5px 5px 5px #4C64FF;}
+}
