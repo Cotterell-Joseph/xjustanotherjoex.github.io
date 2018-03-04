@@ -21,6 +21,4 @@
         grid-gap: 40px;
         padding: 20px 40px;
     }
-.gallery figure img:hover {
-    box-shadow: 5px 5px 5px #4C64FF;
-}
+.gallery figure img:hover {box-shadow: 5px 5px 5px #4C64FF;}
