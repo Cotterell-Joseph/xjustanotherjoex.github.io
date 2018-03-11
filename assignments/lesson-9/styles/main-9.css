@@ -97,6 +97,10 @@ section {
 section.forecast {
     display: none;
 }
+
+#something{
+    padding: 8px;
+}
 #something h2 {
     margin-top: 0.41em;
     margin-bottom: 0.41em;
