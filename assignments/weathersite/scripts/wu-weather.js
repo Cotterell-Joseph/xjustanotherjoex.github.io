@@ -1,4 +1,4 @@
-var currentURL = 'http://api.wunderground.com/api/7fe14c548b6797eb/conditions/q/MN/Franklin.json';
+var currentURL = 'https://api.wunderground.com/api/7fe14c548b6797eb/conditions/q/MN/Franklin.json';
 var requestCurr = new XMLHttpRequest();
 requestCurr.open('GET', currentURL, true);
 requestCurr.send();
@@ -12,7 +12,7 @@ requestCurr.onload = function() {
     document.getElementById('w_icon').src = franklinCurr.current_observation.icon_url;
 }
 
-var forecastURL = 'http://api.wunderground.com/api/7fe14c548b6797eb/forecast/q/MN/Franklin.json';
+var forecastURL = 'https://api.wunderground.com/api/7fe14c548b6797eb/forecast/q/MN/Franklin.json';
 var requestFore = new XMLHttpRequest();
 requestFore.open('GET', forecastURL, true);
 requestFore.send();
