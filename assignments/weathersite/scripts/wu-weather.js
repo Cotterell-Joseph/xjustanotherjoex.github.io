@@ -9,9 +9,8 @@ requestCurr.onload = function() {
     document.getElementById('desc').innerHTML = franklinCurr.current_observation.weather;
     document.getElementById('temp').innerHTML = franklinCurr.current_observation.temp_f;
     document.getElementById('wind').innerHTML = franklinCurr.current_observation.wind_mph;
-    document.getElementById('w_icon').src = franklinCurr.current_observation.icon_url;
-    var iconURL = document.getElementById('w_icon').innerHTML;
-    iconURL = str.replace('http:', 'https:');
+    var iconURL = franklinCurr.current_observation.icon_url;
+    iconURL = iconURL.replace('http:', 'https:');
     document.getElementById('w_icon').src = iconURL;
 }
 
