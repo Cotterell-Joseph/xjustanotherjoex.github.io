@@ -10,6 +10,9 @@ requestCurr.onload = function() {
     document.getElementById('temp').innerHTML = franklinCurr.current_observation.temp_f;
     document.getElementById('wind').innerHTML = franklinCurr.current_observation.wind_mph;
     document.getElementById('w_icon').src = franklinCurr.current_observation.icon_url;
+    var iconURL = document.getElementById('w_icon').innerHTML;
+    iconURL = str.replace('http:', 'https:');
+    document.getElementById('w_icon').src = iconURL;
 }
 
 var forecastURL = 'https://api.wunderground.com/api/7fe14c548b6797eb/forecast/q/MN/Franklin.json';
