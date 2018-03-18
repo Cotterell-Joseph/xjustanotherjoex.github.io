@@ -20,4 +20,43 @@
         padding: 20px 40px;
     }
 .gallery figure img:hover {box-shadow: 5px 5px 5px #4C64FF;}
+.cards {
+    display: flex;
+    flex-direction: row;
 }
+    .Franklin {
+        display: flex;
+        margin: .5em;
+        flex-direction: column-reverse;
+    }
+    .Franklin > img {
+        width: 100%;
+    }
+    .Franklin > span {
+        width: 100%;
+        border: 1px solid #000;
+    }
+    .Greenville {
+        display: flex;
+        margin: .5em;
+        flex-direction: column;
+    }
+    .Greenville > img {
+        width: 100%;
+    }
+    .Greenville > span {
+        width: 100%;
+        border: 1px solid #000;
+}
+    .Springfield {
+        display: flex;
+        margin: .5em;
+        flex-direction: column-reverse;
+    }
+    .Springfield > img {
+        width: 100%;
+    }
+    .Springfield > span {
+        width: 100%;
+        border: 1px solid #000;
+    }

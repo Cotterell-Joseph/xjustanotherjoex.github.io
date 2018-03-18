@@ -65,12 +65,20 @@
       width: 100%;
   }
     article {
-        overflow: auto;
+        display: flex;
     }
-  article p.town-article img { 
+    article .town-article {
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+        width: 40%;
+    }
+    article img {width: 60%;}
+  article .town-article img { 
       width: 50%; 
       float:right; 
       margin: 8px 0 8px 8px;
+      padding: .5em;
     }
 .gallery {
         grid-template-columns: 1fr 1fr;
@@ -88,5 +96,41 @@ label span {
     }
 #ratingvalue {
      font-size: 1.25em;   
+    }
+    .Franklin {
+        display: flex;
+        margin: .5em;
+        flex-direction: row;
+    }
+    .Franklin > img {
+        width: 60%;
+    }
+    .Franklin > span {
+        width: 40%;
+        border: 1px solid #000;
+    }
+    .Greenville {
+        display: flex;
+        margin: .5em;
+        flex-direction: row;
+    }
+    .Greenville > img {
+        width: 60%;
+    }
+    .Greenville > span {
+        width: 40%;
+        border: 1px solid #000;
+}
+    .Springfield {
+        display: flex;
+        margin: .5em;
+        flex-direction: row;
+    }
+    .Springfield > img {
+        width: 60%;
+    }
+    .Springfield > span {
+        width: 40%;
+        border: 1px solid #000;
     }
 }

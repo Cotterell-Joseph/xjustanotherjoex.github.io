@@ -127,11 +127,12 @@ section.forecast {
 }
 article {
   border: 1px solid black;
+  padding: .5em;
 }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
 }
-article p.town-article {
+article town-article {
     margin: 8px;
 }
 footer {
@@ -223,3 +224,43 @@ textarea {
     color: white;
     margin-left: 1.5em;
 }
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+    .Franklin {
+        display: flex;
+        margin: .5em;
+        flex-direction: column-reverse;
+    }
+    .Franklin > img {
+        width: 100%;
+    }
+    .Franklin > span {
+        width: 100%;
+        border: 1px solid #000;
+    }
+    .Greenville {
+        display: flex;
+        margin: .5em;
+        flex-direction: column;
+    }
+    .Greenville > img {
+        width: 100%;
+    }
+    .Greenville > span {
+        width: 100%;
+        border: 1px solid #000;
+}
+    .Springfield {
+        display: flex;
+        margin: .5em;
+        flex-direction: column-reverse;
+    }
+    .Springfield > img {
+        width: 100%;
+    }
+    .Springfield > span {
+        width: 100%;
+        border: 1px solid #000;
+    }
