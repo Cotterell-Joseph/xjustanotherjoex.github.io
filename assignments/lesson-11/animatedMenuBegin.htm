@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animated Menu | Lesson 11 Tutorial | BYU-I CIT 230</title>
+    <meta name="author" content="Joseph W. Cotterell">
+    <meta name="description" content="Animated Menu from jQuery Applications Assignment">
+	<link rel="stylesheet" href="styles/animatedMenu.css">
+	<!--<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>-->
+
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Catalog</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	$(function(){
+		// All jQuery code goes here
+        $('.navigation > li').hover(function() {
+            // This code executes when the mouse pointer is over the list item
+            
+            $(this).addClass('openSesame');
+        }, function(){
+            // This code executes when the mouse pointer leaves the list item
+            
+            $(this).removeClass('openSesame');
+        });
+	})
+	</script>
+</body>
+</html>
