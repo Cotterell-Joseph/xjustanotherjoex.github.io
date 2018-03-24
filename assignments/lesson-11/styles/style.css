@@ -1,7 +1,7 @@
 /* Style.css | Created by Sachin Bhatnagar (mailme@sachinbhatnagar.com) for 
 Introduction to jQuery (Learnable) | August 2014 */
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 * {
 	font-family:sans-serif;
@@ -15,7 +15,7 @@ html,body {
 }
 
 body {
-	background:url('../img/congruent_pentagon.png');
+	background:url('../images/congruent_pentagon.png');
 }
 
 .container {
@@ -39,7 +39,6 @@ body {
 	width:250px;
 	height:100px;
 	float:left;
-	background:url('../img/logo.png');
 	background-color:rgb(235, 253, 212);
 	opacity:1.0;
 }
@@ -87,7 +86,6 @@ body {
 	left:20px;
 	width:600px;
 	height:250px;
-	background:url('../img/head_image.jpg');
 	border-radius:5px;
 }
 
@@ -271,11 +269,20 @@ body {
 	font-size: 12px;
 	color: rgba(0,0,0,0.8);
 }
-
+.nav2 {
+	position: absolute;
+	top: 8px;
+	right: 7px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	color: rgba(0,0,0,0.8);    
+}
 .footer a {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
 }
-
+fieldset {
+    border: none;
+}
 
