@@ -35,6 +35,29 @@
         </nav>
         
         <main>
+            <section class="event">
+                <img src="images/event-mobile.jpg" alt="Event Banner Image" sizes="50vw"
+                     srcset="images/event-mobile.jpg 600w,
+                             images/event-med.jpg 1024w,
+                             images/event-large.jpg 1200w">
+                <h1>Cycle the Continental Divide</h1>
+                <p>Every year we put together one of the most anticipated cycling adventures in the Americas. We begin near Canada and travel through five states, ending in New Mexico. This four week excursion will leave a lasting impression for years to come. The scenery is amazing, and the adventure even more so. If you are concerned about the logistics, don't be. We take care of it all. Is 4 weeks too long? Then join us for one of the legs&#42;. For more details and to reserve your place, fill out the form below, but don't delay, these adventures fill up fast.</p>
+                <aside><p>&#42;Priority placement reserved for full trip sign-ups.</p></aside>
+            </section>
+            <div id="formhead">
+                <h1>For More Details, Sign Up Today&#33;</h1>
+            </div>
+            <form enctype="multipart/form-data" name="notify">
+                <fieldset>
+                    <label><span>Full Name: </span><input name="fullname" type="text" pattern="[a-zA-Z\s]{5,99}" required></label>
+                    <label><span>Email: </span><input name="email" type="email" value="" placeholder="youremail@email.com" required></label>
+                    <label><span>Phone: </span><input name="phone" type="tel" required></label>
+                    <label><span>Date of Birth: </span><input name="dateofbirth" type="date" required></label>
+                    <label><span>Home State or Country: </span><input name="home" type="text"></label>
+                    <label><span>Special Accomodations or Comments: </span><textarea name="comments" rows="4" cols="65" value="" placeholder="Leave us a message."></textarea></label>
+                </fieldset>
+                <input type="submit" value="I'm In!" formaction="thanks.html" class="submitBtn">
+            </form>
         </main>
         
         <footer>

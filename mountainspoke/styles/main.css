@@ -101,7 +101,9 @@ article h1 {
 article p {
     margin: 1rem;
 }
-
+.rightside {
+    flex-direction: row-reverse;
+}
 .button {
     background-color: #001496;
     border: none;
@@ -127,13 +129,33 @@ article p {
 main img {
     width: 100%;
 }
-
-.accordion {
+.image2, .image3, .tour {
     display: none;
 }
-
 ui-accordion {
     background-color: #FF5719;
+}
+#accordion h1 {
+    margin: .5rem 0;
+    font-size: 1.5rem;
+}
+#accordion p {
+    margin: .5rem;
+    font-size: .85rem;
+}
+#accordion .button {
+    left: 20%;
+}
+.event {
+    border: 1px solid #000;
+    padding: .5rem;
+}
+.event aside p {
+    font-size: .75rem;
+    margin: 0;
+}
+.event h1 {
+    text-align: center;
 }
 /*forms*/
 fieldset {
@@ -171,6 +193,40 @@ input.submitBtn {
     background: #FF5719;
     box-shadow: 4px 4px 10px #666
 }
+/*tables*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: .5rem;
+}
+thead tr:nth-child(odd) {
+    font-size: 1.65rem;
+    background-color: #FF5719;
+}
+thead tr:nth-child(even) {
+    font-size: 1.1rem;
+    background-color: #001496;
+    color: white;
+}
+tbody tr:nth-child(odd) {
+    background-color: #FF8F65;
+}
+tbody tr:nth-child(even) {
+    background-color: #4C64FF;
+    color: white;
+}
+tfoot {
+    background-color: #001496;
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+}
+table {
+    margin: 1.25rem;
+    box-shadow: .75rem .75rem .75rem #628CA6;
+}
 /*footer*/
 footer {
     display: flex;
@@ -191,4 +247,96 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
     color: #FF5719;
+}
+
+/*Medium View*/
+@media only screen and (min-width: 37.5rem) {
+    
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav button {display: none;}
+
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+    }
+    nav {margin-bottom: .5rem;}
+    .grid-container{
+        display: grid;
+        grid-gap: .75rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto
+    }
+    .featured-product {
+        grid-column: 3;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .featured-product img {
+        height: 200px;
+    }
+    .event-article {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        
+    }
+    .event-article h1, .featured-product h1, .tour h1 {
+        margin: .5rem 0;
+        font-size: 1.5rem;
+    }
+    .event-article p, .featured-product p {
+        margin: .5rem;
+        font-size: .85rem;
+    }
+    .tour {
+        grid-column: 1;
+        grid-row: 1;
+        display: block;
+        border: 1px solid #000;
+    }
+    .tour h1 {
+        text-align: center;
+    }
+    .tour img {
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+    .image1 {
+        grid-column: 2;
+        grid-row: 1;
+        height:
+    }
+    .image2 {
+        display: block;
+        grid-column: 3;
+    }
+    #accordion {
+        max-width: 800px;
+    }
+    .sales {
+        margin: 0 2% .5rem;
+    }
+}
+
+/*Large View*/
+@media only screen and (min-width: 64rem) {
+    header, body, footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .tour {
+        display: none;
+    }
+    .image3 {
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    body {
+        box-shadow: 0 .75rem .75rem .75rem #628CA6;
+    }
 }
