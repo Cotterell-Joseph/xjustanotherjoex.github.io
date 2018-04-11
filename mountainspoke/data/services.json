@@ -1,0 +1,52 @@
+{
+    "services" :[
+    {
+        "name": "Flat Repair",
+        "estimatedTime": "1 hour",
+        "cost": "10.00",
+        "type": "repair"
+    },
+    {
+        "name": "Chain Clean and Lube",
+        "estimatedTime": "1 hour",
+        "cost": "20.00",
+        "type": "maintenance"
+    },
+    {
+        "name": "Rim Alignment",
+        "estimatedTime": "2 hours",
+        "cost": "35.00",
+        "type": "repair"
+    },
+    {
+        "name": "Replace Brake Pads",
+        "estimatedTime": "1 hour",
+        "cost": "25.00",
+        "type": "maintenance"
+    },
+    {
+        "name": "Derailer Alignment",
+        "estimatedTime": "2 hours",
+        "cost": "35.00",
+        "type": "repair"
+    },
+    {
+        "name": "Spring Tune-Up",
+        "estimatedTime": "4 hours",
+        "cost": "79.95",
+        "type": "package"
+    },
+    {
+        "name": "Ready-Set-Go",
+        "estimatedTime": "1 hour",
+        "cost": "109.95",
+        "type": "package"
+    },
+    {
+        "name": "Five Year Warranty",
+        "estimatedTime": "N/A",
+        "cost": "269.95",
+        "type": "warranty"
+    }
+    ]
+}

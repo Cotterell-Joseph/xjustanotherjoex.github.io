@@ -109,10 +109,46 @@
             </nav>
 		</footer>
 	</div>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            // jQuery Code goes here - Lesson 2
+            alert('Hello jQuery!!');
+        })
+    </script>
+    <script>
+        $(function(){
+            // jQuery Code goes here - Lesson 3
+            //$('#alcoveLogo').css('opacity', 0.4);
+            //$('.servicesBtn').css('color', '#FFF');
+            //$('button').css('border', '1px solid red');
+            //$('h2').css('border', '1px solid red');
+            //$('input[name="nameVal"]').css('border', '1px solid red');
+            //$('input[name!="phoneNum"]').css('border', '1px solid red');
+            //$('input[name*="Num"]').css('border', '1px solid red');
+            $('input[name$="Val"]').css('border', '1px solid red');
+            //$('#alcoveLogo').next().css('background-color', 'rgba(255, 0, 0, 0.2)');
+            $('.box1').nextAll().css('background-color', 'rgba(255, 0, 0, 0.2)');
+            $('.header').children().css('background-color', 'rgba(255, 0, 0, 0.2)');
+            $(".navigation > li:eq(3)").parent().parent().parent().css('opacity', '0.3');
+        })
+    </script>
+
 	<script>
 	$(function(){
-		// jQuery Code goes here
+		// jQuery Code goes here - Lesson 4
+        
+        /*toggleStyle = function(){
+            if($('input[type="text"]').css('background-color') === 'rgb(255, 0, 0)'){
+                // set background to white
+                $('input[type="text"]'.css('background-color', 'rgb(255, 255, 255)');
+            } else {
+                // set background to red
+                $('input[type="text"]'.css('background-color', 'rgb(255, 0, 0)');
+            }
+        }
+        
+        $('#ReqAQuoteBtn').click(toggleStyle);*/
         
         var nameVal = $('input[name="nameVal"]');
         

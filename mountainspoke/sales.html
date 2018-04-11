@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <title>Sales | The Mountain Spoke | Bozeman, Montana</title>
+        <meta name="author" content="Joseph W. Cotterell">
+        <meta name="description" content="Cycle shop for enthusiasts and beginners. Host of event and tours including Cycle the Continental Divide annual event">
+        <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <header>
+            <img src="images/logo-sales.png" alt="Mountain Spoke Logo">
+            <div class="rightheader">
+                <h1>The Mountain Spoke</h1>
+                <p class="subheading">Home of the annual &quot;Cycle the Conitental Divide&quot; event</p>
+            </div>
+        </header>
+        
+        <nav>
+            <div class="righbutton"><button onclick="toggleNavMenu()">&#9776;</button></div>
+            <ul id="navMenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Sales</a></li>
+                <li><a href="service.html">Repairs &amp; Tune-Ups</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div id="accordion">
+            <h3>Cannondale</h3>
+            <article>
+                <img src="images/cannondale.jpg" alt="Cannondale Scalpel-SI Black Inc. Image">
+                <div class="product1">
+                    <h1>Scalpel-SI Black Inc.</h1>
+                    <p><strong>Frame:</strong> BallisTec Carbon<br><strong>Suspension:</strong> Full<br><strong>Drivetrain:</strong> Shimano XTR Di2<br><strong>Price:</strong> &#36;11,999.99</p>
+                    <a href="#" class="button">Purchase</a>
+                </div>
+            </article>
+            <h3>Specialized</h3>
+            <article>
+                <img src="images/specialized.jpg" alt="Specialized S-Works Camber Fsr Carbon Image">
+                <div class="product2">
+                    <h1>S-Works Camber Fsr</h1>
+                    <p><strong>Frame:</strong> S-Works FACT Carbon<br><strong>Suspension:</strong> Full<br><strong>Drivetrain:</strong> SRAM XX1 Eagle<br><strong>Price:</strong> &#36;8,200.00</p>
+                    <a href="#" class="button">Purchase</a>
+                </div>
+            </article>
+            <h3>GT</h3>
+            <article>
+                <img src="images/GT.jpg" alt="GT Sanction Pro Image">
+                <div class="product3">
+                    <h1>Sanction Pro</h1>
+                    <p><strong>Frame:</strong> COR Enduro 6069-T6 Alloy<br><strong>Suspension:</strong> Full<br><strong>Drivetrain:</strong> Shimano Deore XT Shadow Plus<br><strong>Price:</strong> &#36;4,199.99</p>
+                    <a href="#" class="button">Purchase</a>
+                </div>
+            </article>
+            </div>
+        </main>
+        
+        <footer>
+            <p>The Mountain Spoke<br>3950 Valley Commons Drive<br>Bozeman, Montana<br>(888) 126-5555<br>info@mountainspoke.com<br>&copy;2018 All Right Reserved<br><a href="resources.html">Resources</a><br><a href="video.html">Overview Video</a></p>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( "#accordion" ).accordion();
+            $('.ui-accordion-header').css('background-color', '#FF8F65');
+            $('.ui-accordion-header').css('margin', '0');
+            $('.ui-accordion-header').css('padding', '.5rem');
+            $('.ui-accordion-header').css('border', '1px solid #FF5719');
+        </script>
+    </body>
+    
+</html>

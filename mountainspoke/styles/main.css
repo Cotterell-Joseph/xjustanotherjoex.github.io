@@ -1,0 +1,194 @@
+* { box-sizing: border-box;}
+
+body {
+    font-size: 16px;
+    font-family: 'Mina', 'Lucinda Grande', sans-serif;
+}
+
+header, nav, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+header {
+    display: flex
+}
+
+header img {
+    padding: .5rem;
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.subheading {
+    font-size: 1.2rem
+}
+
+.rightheader {
+    margin: .5rem 0 0 1rem
+}
+
+/* Nav Bar */
+.rightbutton {
+    display: flex;
+}
+
+nav button {
+    margin: .2rem 2%;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #001496;
+    color: white;
+    border-radius: 2px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001496;
+}
+
+nav ul li a {
+    display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 12px;
+	text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #FF5719;
+	color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #4C64FF;
+    color: white;
+}
+nav ul.hide {display: none;}
+
+/*main*/
+main {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+    margin-bottom: .2rem;
+}
+
+article img {
+    width: 40%;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p {
+    margin: 1rem;
+}
+
+.button {
+    background-color: #001496;
+    border: none;
+    color: white;
+    padding: 0 4px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    left: 55%;
+}
+
+.product1 {
+    margin-bottom: .5rem;
+}
+
+.product1 a:hover {
+    background-color: #4C64FF;
+}
+
+main img {
+    width: 100%;
+}
+
+.accordion {
+    display: none;
+}
+
+ui-accordion {
+    background-color: #FF5719;
+}
+/*forms*/
+fieldset {
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    background-color: #4C64FF;
+    margin: 1.5rem;
+    margin-bottom: 0;
+    border: none;
+}
+/*legend {
+    color: white;
+    border-left: 6px solid #ff5719;
+    padding: .5rem;
+    background-color: #4C64FF;
+    width: 100%;
+}*/
+label {
+    display: block;
+    margin: .5rem;
+}
+label span {
+    display: block;
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
+}
+input.submitBtn {
+    -webkit-appearance: none;
+    color: black;
+    border: solid 1px #001496;
+    margin: .5rem 0;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    background: #FF5719;
+    box-shadow: 4px 4px 10px #666
+}
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    background-color: #4C64FF;
+    color: white;
+}
+footer>p {
+    margin: .5rem;
+    text-align: center;
+}
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+    color: #FF5719;
+}
