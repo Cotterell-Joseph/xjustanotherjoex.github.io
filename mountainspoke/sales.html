@@ -36,8 +36,8 @@
         
         <main class="sales">
             <div id="accordion">
-            <h3>Cannondale</h3>
-            <article>
+            <h3 class="accordion-header1">Cannondale</h3>
+            <article id="accordion-1">
                 <img src="images/cannondale.jpg" alt="Cannondale Scalpel-SI Black Inc. Image">
                 <div class="product1">
                     <h1>Scalpel-SI Black Inc.</h1>
@@ -45,8 +45,8 @@
                     <a href="#" class="button">Purchase</a>
                 </div>
             </article>
-            <h3>Specialized</h3>
-            <article>
+            <h3 class="accordion-header2">Specialized</h3>
+            <article id="accordion-2">
                 <img src="images/specialized.jpg" alt="Specialized S-Works Camber Fsr Carbon Image">
                 <div class="product2">
                     <h1>S-Works Camber Fsr</h1>
@@ -54,8 +54,8 @@
                     <a href="#" class="button">Purchase</a>
                 </div>
             </article>
-            <h3>GT</h3>
-            <article>
+            <h3 class="accordion-header3">GT</h3>
+            <article id="accordion-3">
                 <img src="images/GT.jpg" alt="GT Sanction Pro Image">
                 <div class="product3">
                     <h1>Sanction Pro</h1>
@@ -72,13 +72,21 @@
         
         <script src="scripts/hamburger.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
-            $( "#accordion" ).accordion();
-            $('.ui-accordion-header').css('background-color', '#FF8F65');
-            $('.ui-accordion-header').css('margin', '0');
-            $('.ui-accordion-header').css('padding', '.5rem');
-            $('.ui-accordion-header').css('border', '1px solid #FF5719');
+            $(document).ready(function(){
+                $(".accordion-header1").click(function(){
+                    $("#accordion-1").slideDown(300);
+                    $('#accordion-2, #accordion-3').slideUp(300);
+                });
+                $(".accordion-header2").click(function(){
+                    $("#accordion-2").slideDown(300);
+                    $('#accordion-1, #accordion-3').slideUp(300);
+                });
+                $(".accordion-header3").click(function(){
+                    $("#accordion-3").slideDown(300);
+                    $('#accordion-1, #accordion-2').slideUp(300);
+                });
+            });
         </script>
     </body>
     

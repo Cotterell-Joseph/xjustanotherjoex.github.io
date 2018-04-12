@@ -140,6 +140,21 @@ ui-accordion {
     margin: .5rem 0;
     font-size: 1.5rem;
 }
+.accordion-header1, .accordion-header2, .accordion-header3 {
+    background-color: #FF8F65;
+    margin: 0;
+    padding: .5rem;
+    border: 1px solid #FF5719;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.17rem;
+    display: block;
+    transition: all linear 0.15s;
+}
+#accordion-2, #accordion-3 {
+    display: none;
+}
 #accordion p {
     margin: .5rem;
     font-size: .85rem;
